@@ -1,6 +1,6 @@
-package com.example.wildlife;
+package com.example.wildlife
 
-import retrofit2.Call;
+import retrofit2.Call
 import retrofit2.http.GET
 
 interface ApiInterface {
