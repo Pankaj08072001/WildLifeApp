@@ -7,4 +7,6 @@ interface ApiInterface {
 
     @GET("products")
     fun getProductData() : Call<MyData>
+
 }
+
