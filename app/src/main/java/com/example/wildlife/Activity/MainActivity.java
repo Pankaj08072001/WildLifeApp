@@ -1,5 +1,6 @@
 package com.example.wildlife.Activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -24,6 +25,7 @@ import com.example.wildlife.Fragment.ProfileFragment;
 import com.example.wildlife.Model.Animal;
 import com.example.wildlife.MyData;
 import com.example.wildlife.R;
+import com.example.wildlife.SearchActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
 
@@ -192,6 +194,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == R.id.action_search) {
+            Intent intent = new Intent(this, SearchActivity.class);
+            startActivity(intent);
             Toast.makeText(this, "Search Clicked ", Toast.LENGTH_SHORT).show();
             return true;
         }
