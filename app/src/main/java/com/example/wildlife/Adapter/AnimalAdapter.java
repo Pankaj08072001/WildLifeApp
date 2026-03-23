@@ -42,12 +42,22 @@ public class AnimalAdapter extends RecyclerView.Adapter<AnimalAdapter.ViewHolder
         holder.tvName.setText(animal.getName());
         holder.image.setImageResource(animal.getImage());
 
+//        holder.itemView.setOnClickListener(v -> {
+//            Intent intent = new Intent(context, DetailActivity.class);
+//            intent.putExtra("name", animal.getName());
+//            intent.putExtra("image", animal.getImage());
+//            context.startActivity(intent);
+//        });
+
         holder.itemView.setOnClickListener(v -> {
+
             Intent intent = new Intent(context, DetailActivity.class);
-            intent.putExtra("name", animal.getName());
-            intent.putExtra("image", animal.getImage());
+            intent.putExtra("animal_name", animalList.get(position).getName());
+            intent.putExtra("animal_image", animalList.get(position).getImage());
             context.startActivity(intent);
+
         });
+
     }
 
     @Override

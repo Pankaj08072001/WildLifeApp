@@ -14,6 +14,7 @@
         android:theme="@style/Theme.WildLife">
         <activity
             android:name=".Activity.DetailActivity"
+            android:theme="@style/Theme.WildLife"
             android:exported="false" />
         <activity
             android:name=".Activity.MainActivity"
