@@ -25,7 +25,6 @@ import com.example.wildlife.Fragment.ProfileFragment;
 import com.example.wildlife.Model.Animal;
 import com.example.wildlife.MyData;
 import com.example.wildlife.R;
-import com.example.wildlife.SearchActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
 
