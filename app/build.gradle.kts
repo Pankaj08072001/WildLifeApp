@@ -41,6 +41,7 @@ android {
 
     buildFeatures {
         compose = true
+        viewBinding = true
     }
 }
 
@@ -66,6 +67,8 @@ dependencies {
 
     // Firebase
     implementation(libs.firebase.database)
+    implementation(libs.androidx.navigation.fragment)
+    implementation(libs.androidx.navigation.ui)
 
     // Testing
     testImplementation(libs.junit)
