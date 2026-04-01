@@ -2,6 +2,7 @@ package com.example.wildlife.Activity;
 
 import android.os.Build;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -31,6 +32,8 @@ public class DetailActivity extends AppCompatActivity {
 
         String animalName = getIntent().getStringExtra("animal_name");
         int animalImage = getIntent().getIntExtra("animal_image", 0);
+
+//        Log.d("DetailActivity", "Animal Name: $animalName");
 
         name.setText(animalName);
         image.setImageResource(animalImage);
