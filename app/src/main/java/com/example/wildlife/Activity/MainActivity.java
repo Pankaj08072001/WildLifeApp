@@ -99,6 +99,7 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         animalList = new ArrayList<>();
+//        animalList.add(new Animal(getString(R.string.LionDetails), R.drawable.lions));
         animalList.add(new Animal("Lion", R.drawable.lions));
         animalList.add(new Animal("Tiger", R.drawable.tigers));
         animalList.add(new Animal("Elephant", R.drawable.elephant));
@@ -195,7 +196,7 @@ public class MainActivity extends AppCompatActivity {
         if (item.getItemId() == R.id.action_search) {
             Intent intent = new Intent(this, SearchActivity.class);
             startActivity(intent);
-            Toast.makeText(this, "Search Clicked ", Toast.LENGTH_SHORT).show();
+//            Toast.makeText(this, "Search Clicked ", Toast.LENGTH_SHORT).show();
             return true;
         }
         return super.onOptionsItemSelected(item);
