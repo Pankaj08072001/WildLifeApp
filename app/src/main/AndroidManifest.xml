@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
 
     <application
         android:allowBackup="true"
@@ -12,33 +13,43 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.WildLife">
-<!--        <activity-->
-<!--           android:name="com.example.wildlife.Activity.TestFireBased"-->
-<!--            android:exported="true"-->
-<!--            android:theme="@style/Theme.WildLife">-->
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
+        <activity
+            android:name=".Activity.Test"
+            android:exported="true"
+              android:theme="@style/Theme.WildLife">-->
+                      <intent-filter>-->
+                        <action android:name="android.intent.action.MAIN" />-->
 
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
-<!--        </activity>-->
+                        <category android:name="android.intent.category.LAUNCHER" />-->
+                  </intent-filter>-->/>
+         </activity>
+
+<!--        <activity-->
+<!--         android:name="com.example.wildlife.Activity.TestFireBased"-->
+<!--         android:exported="true"-->
+<!--         android:theme="@style/Theme.WildLife">-->
+<!--         <intent-filter>-->
+<!--         <action android:name="android.intent.action.MAIN" />-->
+<!--         <category android:name="android.intent.category.LAUNCHER" />-->
+<!--         </intent-filter>-->
+<!--         </activity>-->
         <activity
             android:name=".Activity.SearchActivity"
             android:exported="false" />
-        <activity
-            android:name=".Activity.DetailActivity"
-            android:exported="false"
-            android:theme="@style/Theme.WildLife" />
-        <activity
-            android:name=".Activity.MainActivity"
-            android:exported="true"
-            android:theme="@style/Theme.WildLife">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+<!--        <activity-->
+<!--            android:name=".Activity.DetailActivity"-->
+<!--            android:exported="false"-->
+<!--            android:theme="@style/Theme.WildLife" />-->
+<!--                <activity-->
+<!--                    android:name=".Activity.MainActivity"-->
+<!--                    android:exported="true"-->
+<!--                    android:theme="@style/Theme.WildLife">-->
+<!--                    <intent-filter>-->
+<!--                        <action android:name="android.intent.action.MAIN" />-->
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+<!--                        <category android:name="android.intent.category.LAUNCHER" />-->
+<!--                    </intent-filter>-->
+<!--                </activity>-->
     </application>
 
 </manifest>
